@@ -5,7 +5,7 @@ import (
 
 	"github.com/mdlayher/netlink"
 
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 // Stats represents the Conntrack performance counters of a single CPU (core).

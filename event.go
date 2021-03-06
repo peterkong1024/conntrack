@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/mdlayher/netlink"
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 // Event holds information about a Conntrack event.

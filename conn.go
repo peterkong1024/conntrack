@@ -5,7 +5,7 @@ import (
 
 	"github.com/mdlayher/netlink"
 	"github.com/pkg/errors"
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 // Conn represents a Netlink connection to the Netfilter
@@ -105,13 +105,15 @@ func (c *Conn) eventWorker(workerID uint8, evChan chan<- Event, errChan chan<- e
 		recv, err = c.conn.Receive()
 		if err != nil {
 			errChan <- errors.Wrap(err, fmt.Sprintf(errWorkerReceive, workerID))
-			return
+			//return
+			continue
 		}
 
 		// Receive() always returns a list of Netlink Messages, but multicast messages should never be multi-part
 		if len(recv) > 1 {
 			errChan <- errMultipartEvent
-			return
+			//return
+			continue
 		}
 
 		// Decode event and send on channel
@@ -119,7 +121,8 @@ func (c *Conn) eventWorker(workerID uint8, evChan chan<- Event, errChan chan<- e
 		err := ev.unmarshal(recv[0])
 		if err != nil {
 			errChan <- err
-			return
+			//return
+			continue
 		}
 
 		evChan <- ev

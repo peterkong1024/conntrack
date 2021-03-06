@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/mdlayher/netlink"
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 func TestConnListen(t *testing.T) {

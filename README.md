@@ -9,7 +9,7 @@ and does not parse or scrape any output of the `conntrack` command.
 
 It is designed in a way that makes the user acquainted with the structure of the protocol,
 with a clean separation between the Conntrack types/attributes and the Netfilter layer (implemented
-in https://github.com/ti-mo/netfilter).
+in https://github.com/peterkong1024/netfilter).
 
 All Conntrack attributes known to the kernel up until version 4.17 are implemented. There is experimental
 support for manipulating Conntrack 'expectations', beside listening and dumping. The original focus of the

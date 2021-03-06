@@ -3,7 +3,7 @@ package conntrack
 import (
 	"testing"
 
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 
 	"github.com/google/go-cmp/cmp"
 )

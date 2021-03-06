@@ -1,6 +1,6 @@
 package conntrack
 
-import "github.com/ti-mo/netfilter"
+import "github.com/peterkong1024/netfilter"
 
 // All enums in this file are translated from the Linux kernel source at
 // include/uapi/linux/netfilter/nfnetlink_conntrack.h

@@ -5,7 +5,7 @@ import (
 
 	"github.com/mdlayher/netlink"
 	"github.com/pkg/errors"
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 const (

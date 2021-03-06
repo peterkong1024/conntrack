@@ -1,7 +1,7 @@
 package conntrack
 
 import (
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 // Filter is a structure used in dump operations to filter the response

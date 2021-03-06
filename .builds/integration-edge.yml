@@ -5,7 +5,7 @@ packages:
   - go
   - curl
 sources:
-  - https://github.com/ti-mo/conntrack
+  - https://github.com/peterkong1024/conntrack
 environment:
   GOTRACEBACK: "all"
 tasks:

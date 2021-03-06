@@ -7,7 +7,7 @@ import (
 	"github.com/mdlayher/netlink"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ti-mo/netfilter"
+	"github.com/peterkong1024/netfilter"
 )
 
 func TestStatsUnmarshal(t *testing.T) {
