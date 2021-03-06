@@ -1,14 +1,13 @@
-module github.com/peterkong1024/conntrack
+module github.com/peterkong1024/netfilter
 
-go 1.12
+go 1.14
 
 require (
-	github.com/google/go-cmp v0.5.2
-	github.com/mdlayher/netlink v1.1.2-0.20201013204415-ded538f7f4be
+	github.com/google/go-cmp v0.5.5
+	github.com/mdlayher/netlink v1.4.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.4.0
-	github.com/peterkong1024/netfilter v0.3.1
 	github.com/vishvananda/netns v0.0.0-20180720170159-13995c7128cc
-	golang.org/x/net v0.0.0-20201016165138-7b1cca2348c0 // indirect
-	golang.org/x/sys v0.0.0-20201017003518-b09fb700fbb7
+	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
+	golang.org/x/sys v0.0.0-20210305230114-8fe3ee5dd75b
 )
